@@ -3,19 +3,13 @@ Default Paths
 /opt/SimpleRemoteControl
 /usr/lib/bonobo/servers/GNOME_SimpleRemoteControl.server
 
-To make working the applet, put the files in this 
-directory into paths written before with the commands:
+Installation
 
 cd $dir_where_simplerc_is$/simplerc
 sudo mv SimpleRemoteControl /opt
 sudo mv GNOME_SimpleRemoteControl.server /usr/lib/bonobo/servers/
-or with a superuser nautilus shell
 
-Is a good thing delete any before version's with:
-sudo rm /opt/SimpleRemoteControl /usr/lib/bonobo/servers/GNOME_SimpleRemoteControl.server -rf
-rm $HOME/.config/simpleremotecontrol
-
-if you are installed from a deb package, remove it with your preferred packet manager
+Remove any old version befor start installing
 
 THANKS FOR THE SUPPORT
 
