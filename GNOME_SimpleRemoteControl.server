@@ -1,0 +1,26 @@
+ <oaf_info>
+        <oaf_server iid="OAFIID:GNOME_SimpleRemoteControl_Factory"
+                    type="exe" location="/opt/SimpleRemoteControl/SimpleRemoteControl.py">
+
+                <oaf_attribute name="repo_ids" type="stringv">
+                        <item value="IDL:Bonobo/GenericFactory:1.0"/>
+                        <item value="IDL:Bonobo/Unknown:1.0"/>
+                </oaf_attribute>
+                <oaf_attribute name="name" type="string" value="SimpleRemoteControl"/>
+                <oaf_attribute name="description" type="string" value="a simple control for mpd daemon"/>
+        </oaf_server>
+
+        <oaf_server iid="OAFIID:GNOME_SimpleRemoteControl"
+                    type="factory" location="OAFIID:GNOME_SimpleRemoteControl_Factory">
+
+                <oaf_attribute name="repo_ids" type="stringv">
+                        <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+                        <item value="IDL:Bonobo/Control:1.0"/>
+                        <item value="IDL:Bonobo/Unknown:1.0"/>
+                </oaf_attribute>
+                <oaf_attribute name="name" type="string" value="SimpleRemoteControl"/>
+                <oaf_attribute name="description" type="string" value="a simple control for mpd daemon"/>
+                <oaf_attribute name="panel:category" type="string" value="Utility"/>
+                <oaf_attribute name="panel:icon" type="string" value="bug-buddy.png"/>
+        </oaf_server>
+        </oaf_info>
